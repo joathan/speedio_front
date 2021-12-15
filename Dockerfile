@@ -1,9 +1,17 @@
-FROM node:14.14.0
+FROM node:lts-alpine
+
+RUN npm install -g http-server
 
 WORKDIR /speedio_front
+
+COPY package*.json ./
 
 RUN npm install
 
 COPY . .
 
-CMD ["yarn", "serve"]
+RUN npm run build
+
+EXPOSE 8080
+
+CMD [ "http-server", "dist" ]
