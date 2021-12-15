@@ -1,24 +1,30 @@
-# speedio_front
+# README
 
-## Project setup
-```
-yarn install
-```
+### Setup:
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+1 - Usando o docker, crie uma rede se não existir, executando no terminal o comando:
+
+```sh
+docker network create -d bridge rede
 ```
 
-### Compiles and minifies for production
-```
-yarn build
+2 - Faça um build da do projeto
+
+```sh
+docker build -t speedio_front:latest .
 ```
 
-### Lints and fixes files
-```
-yarn lint
+3 - Suba o container
+
+```sh
+docker run -d --network=rede -p 8080:8080 speedio_front
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Endereço do projeto: http://localhost:8080
+
+## Melhorias na implementação:
+
+- Implementação do login 
+- Paginação dos resultados no front
+- Criar testes
+- Melhorar a usabilidade
