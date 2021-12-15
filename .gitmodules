@@ -1,0 +1,3 @@
+[submodule "speedio_front"]
+	path = speedio_front
+	url = git@github.com:joathan/speedio_front.git
