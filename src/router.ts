@@ -4,7 +4,6 @@ import { RouteRecordRaw } from "vue-router";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    alias: "/short_urls",
     name: "short_urls",
     component: () => import("./components/short_url/ListShortUrl.vue"),
   },

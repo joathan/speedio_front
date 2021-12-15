@@ -23,7 +23,7 @@
     <div v-else>
       <br />
       <p>we don't have any top hundred...</p>
-      <router-link :to="'/'" class="btn btn-dark">Back</router-link>
+      <router-link to="/" class="btn btn-dark">Back</router-link>
     </div>
   </div>
 </template>

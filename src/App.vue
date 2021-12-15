@@ -4,7 +4,7 @@
       <router-link to="/" class="navbar-brand">Speedio</router-link>
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link to="/short_urls" class="nav-link">ShortUrl</router-link>
+          <router-link to="/" class="nav-link">ShortUrl</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/add" class="nav-link">Add</router-link>

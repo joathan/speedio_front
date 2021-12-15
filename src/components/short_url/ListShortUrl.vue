@@ -21,7 +21,7 @@
     <div v-else>
       <br />
       <p>Please register a new url...</p>
-      <router-link :to="'/add'" class="btn btn-primary">New</router-link>
+      <router-link to="/add" class="btn btn-primary">New</router-link>
     </div>
   </div>
 </template>

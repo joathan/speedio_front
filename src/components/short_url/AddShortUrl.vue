@@ -18,7 +18,7 @@
     <div v-else>
       <h4>You submitted successfully!</h4>
         <button class="btn btn-success m-4" @click="newShortUrl">Add</button>
-        <router-link class="btn btn-primary" :to="'/short_urls'">List Short URLs</router-link>
+        <router-link class="btn btn-primary" to="/">List Short URLs</router-link>
     </div>
   </div>
 </template>
