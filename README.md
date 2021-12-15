@@ -8,7 +8,7 @@
 docker network create -d bridge rede
 ```
 
-2 - Faça um build da do projeto
+2 - Faça um build da aplicação com o comando:
 
 ```sh
 docker build -t speedio_front:latest .
@@ -22,7 +22,7 @@ docker run -d --network=rede -p 8080:8080 speedio_front
 
 ### Endereço do projeto: http://localhost:8080
 
-## Melhorias na implementação:
+## Melhorias futuras na implementação:
 
 - Implementação do login 
 - Paginação dos resultados no front
